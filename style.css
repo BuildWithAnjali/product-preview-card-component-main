@@ -30,7 +30,7 @@ body{
 .box-left img{
     border-radius: 15px 15px 0px 0px;
     width: 350px;
-    height: 280px;
+    height: fit-content;
 }
 /* .price{
     margin-top: 10px;
