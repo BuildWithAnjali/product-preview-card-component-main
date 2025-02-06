@@ -43,6 +43,8 @@ p{
 } */
 .boxex{
     margin: auto;
+
+    height:fit-content;
 }
 }
 @media only screen and (max-width:750px) {
@@ -102,8 +104,8 @@ button img {
     display: flex;
     margin: auto;
     width:fit-content;
-    height: 50em;
-    margin-top: 12em;
+
+    margin-top: 10%;
 }
 .box-right{
     margin-left: 0%;
