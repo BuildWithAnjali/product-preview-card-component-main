@@ -1,0 +1,165 @@
+body{
+    height: fit-content;
+    background-color: hsl(30, 38%, 92%);
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width:750px){
+    .box-right{
+       border-radius: 0px 15px 15px 0px;
+    }
+    img{
+        border-radius: 15px 0px 0px 15px;
+    }
+}
+@media only screen and (max-width:750px) {
+body{
+    margin-top:20px;
+    border-collapse: collapse;
+   
+}
+
+.box-right{
+    border-radius: 0px 0px 15px 15px;
+    margin-top: 0%;
+    height: 280px;
+}
+.box-left img{
+    border-radius: 15px 15px 0px 0px;
+    width: 350px;
+    height: 280px;
+}
+/* .price{
+    margin-top: 10px;
+}
+p{
+    margin:10px ;
+}
+.box-left{
+    margin-bottom: 0%;
+} */
+.boxex{
+    margin: auto;
+}
+}
+@media only screen and (max-width:750px) {
+    .boxex{
+        flex-direction: column;
+        
+    }
+    
+}
+.box-left-hover-zoom--colorize img {
+    transition: transform .5s, filter 1.5s ease-in-out;
+    filter: grayscale(100%);
+  }
+  
+  /* The Transformation */
+  .box-left:hover img {
+    filter: grayscale(0);
+    transform: scale(1.01);
+  }
+.price{
+    display: flex;
+    height: 70px;
+
+    
+}
+.price p{
+    font-size: 14px;
+    margin-top: 14%;
+    margin-left: 10%;
+    margin-bottom: 0%;
+    
+
+}
+button{
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    width: 240px;
+    height: 50px;
+    border: 0px;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+   
+    
+}
+button text{
+   margin-top: auto;
+}
+button img {
+    margin-right: 10px;
+    height: 20px;
+   
+}
+.boxex{
+    display: flex;
+    margin: auto;
+    width:fit-content;
+    height: 50em;
+    margin-top: 12em;
+}
+.box-right{
+    margin-left: 0%;
+    display: block;
+    width: 350px;
+    height: 480px;
+    margin-bottom: 50px;
+    background-color: aliceblue;
+    /* border-radius: 0px 15px 15px 0px; */
+
+}
+p{
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+h1{
+font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+    /* width: 240px; */
+   
+}
+.iner{
+    margin-left: 52px;
+    width: 240px;
+    
+
+
+
+}
+
+button:hover{
+    background-color: darkgreen;
+}
+/* .content{
+    margin-top: 12em;
+    display: flex;
+    
+    margin: auto;
+    height: 30em;
+    
+    border-radius: 15px;
+    
+}
+
+.one{
+
+}
+.two{
+    background-color: hsl(0, 0%, 100%)
+    ;
+    border-radius: 0px 15px 15px 10px;
+} */
