@@ -7,32 +7,19 @@ body{
   display: flex;
   flex-direction: column;
 }
-@media only screen and (min-width:750px){
-    .box-right{
-       border-radius: 0px 15px 15px 0px;
-    }
-    img{
-        border-radius: 15px 0px 0px 15px;
-    }
-}
-@media only screen and (max-width:750px) {
-body{
-    margin-top:20px;
-    border-collapse: collapse;
-   
-}
+
 
 .box-right{
     border-radius: 0px 0px 15px 15px;
     margin-top: 0%;
-    height: 280px;
+    height: 250px;
 }
 .box-left img{
     border-radius: 15px 15px 0px 0px;
     width: 350px;
     height: fit-content;
 }
-/* .price{
+ .price{
     margin-top: 10px;
 }
 p{
@@ -40,27 +27,26 @@ p{
 }
 .box-left{
     margin-bottom: 0%;
-} */
-.boxex{
+} 
+ .boxex{
     margin: auto;
-
     height:fit-content;
 }
-}
-@media only screen and (max-width:750px) {
+
+/* @media only screen and (max-width:750px) {
     .boxex{
         flex-direction: column;
         
     }
     
-}
-.box-left-hover-zoom--colorize img {
+}  */
+ .box-left-hover-zoom--colorize img {
     transition: transform .5s, filter 1.5s ease-in-out;
     filter: grayscale(100%);
   }
   
   /* The Transformation */
-  .box-left:hover img {
+   .box-left:hover img {
     filter: grayscale(0);
     transform: scale(1.01);
   }
@@ -75,9 +61,9 @@ p{
     margin-top: 14%;
     margin-left: 10%;
     margin-bottom: 0%;
-    
+     
 
-}
+} 
 button{
     background-color: hsl(158, 36%, 37%);
     color: hsl(0, 0%, 100%);
@@ -104,17 +90,18 @@ button img {
     display: flex;
     margin: auto;
     width:fit-content;
+    margin-top: 10%; 
 
-    margin-top: 10%;
+    
 }
 .box-right{
     margin-left: 0%;
     display: block;
     width: 350px;
-    height: 480px;
+    height: 450px;
     margin-bottom: 50px;
     background-color: aliceblue;
-    /* border-radius: 0px 15px 15px 0px; */
+     
 
 }
 p{
@@ -131,7 +118,7 @@ font-family: "Fraunces", serif;
   font-variation-settings:
     "SOFT" 0,
     "WONK" 0;
-    /* width: 240px; */
+ 
    
 }
 .iner{
@@ -146,7 +133,7 @@ font-family: "Fraunces", serif;
 button:hover{
     background-color: darkgreen;
 }
-/* .content{
+ .content{
     margin-top: 12em;
     display: flex;
     
@@ -164,4 +151,119 @@ button:hover{
     background-color: hsl(0, 0%, 100%)
     ;
     border-radius: 0px 15px 15px 10px;
-} */
+} 
+
+/* Global Styles */
+body {
+    min-height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+/* Main Container */
+.boxex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 700px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Left Image Section */
+.box-left img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Right Content Section */
+.box-right {
+    padding: 20px;
+    width: 50%;
+    background-color: white;
+}
+
+h1 {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Price Section */
+.price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.price p {
+    font-size: 14px;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+}
+
+/* Button */
+button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+/* Mobile Responsive */
+@media only screen and (max-width: 750px) {
+    .boxex {
+        flex-direction: column;
+        max-width: 320px;
+    }
+    .attribution{
+        position: relative;
+    }
+    
+    .box-left img {
+        border-radius: 15px 15px 0 0;
+    }
+    
+    .box-right {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .price {
+        justify-content: center;
+    }
+    
+    button {
+        width: 100%;
+    }
+}
+
